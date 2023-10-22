@@ -1,0 +1,45 @@
+package loginStepDefention;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+import com.Cucumber.Adactin.BaseClass;
+import com.Cucumber.loginpom.Login_Pom;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Login_Step_Defenition extends BaseClass {
+WebDriver driver=new EdgeDriver();
+//Login_Pom lp=new Login_Pom(driver);
+	@Given("^adactin_LoginPage_Opening$")
+	public void adactin_loginpage_opening() throws Throwable {
+		launchBrowser("edge");
+		
+		
+	    
+	}
+
+	@When("^user_Enters_The_Username$")
+	public void user_enters_the_username() throws Throwable {
+		driver.findElement(By.id("username")).sendKeys("sanjevit");;
+		
+	}
+
+	@When("^user_Enters_The_PassWord$")
+	public void user_enters_the_password() throws Throwable {
+		driver.findElement(By.id("password")).sendKeys("123456");
+	
+	}
+
+	@Then("^user_Clicks_The_LoginButton$")
+	public void user_clicks_the_loginbutton() throws Throwable {
+		driver.findElement(By.id("login")).click();
+		
+	}
+
+
+
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.edge.EdgeDriver"/>
+    <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
+    <fullyQualifiedTypeName name="com.Cucumber.loginpom.Login_Pom"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="com.Cucumber.Adactin.BaseClass"/>
+</qualifiedTypeNameHistroy>

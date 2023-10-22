@@ -1,0 +1,121 @@
+package com.Cucumber.Adactin;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.logging.FileHandler;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+public class BaseClass{
+	public static WebDriver driver;
+	public static Actions act;
+	public static WebDriver launchBrowser(String browserName) {//1
+		if(browserName.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\\\macky\\\\eclipse-workspace\\\\Cucumber.Adactin\\\\driver\\\\msedgedriver.exe");
+			driver= new ChromeDriver();
+			driver.get("");
+			
+			
+		}
+		else if(browserName.equalsIgnoreCase("Edge")){
+			System.setProperty("webdriver.edge.driver","C:\\Users\\macky\\eclipse-workspace\\Cucumber.Adactin\\driver\\msedgedriver.exe");
+			driver=new EdgeDriver();
+			driver.get("http://adactinhotelapp.com/");
+			
+			
+		}
+		return driver;
+		
+	}
+	public static void clickAnElement(WebElement downloadButton) {//2
+		
+		downloadButton.click();
+		
+	}
+
+	public static void select(WebElement element ,String dropDownMethods, String value)//3
+	{
+		Select s=new Select(element);
+		
+		if(dropDownMethods.equalsIgnoreCase("byvalue")) {
+			s.selectByValue(value);
+		}
+		else if(dropDownMethods.equalsIgnoreCase("byindex")) {
+			int ref = Integer.parseInt(value);
+			s.selectByIndex(ref);
+		}
+		else if(dropDownMethods.contentEquals("byvisibletext")) {
+			s.selectByVisibleText(value);
+		}
+		
+	}
+	public static void getUrl(String url) {//4
+		driver.get(url);
+	}
+	public static void maximize() {
+		driver.manage().window().maximize();//5
+	}
+	public static void sendKey(WebElement element1,String name) {//6
+		element1.sendKeys(name);
+	}
+	public static void clear(WebElement element) {//7
+		element.clear();
+		
+	}
+	public static void close() {//8
+		driver.close();
+	}
+	public static void quit() {//9
+		driver.quit();
+	}
+	public static void screenshot(String name) throws IOException {//10
+		TakesScreenshot ss = (TakesScreenshot) driver;
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+				FileUtils.copyFile(scrFile, new File("c:\\tmp\\screenshot.png"));
+	}
+	
+	public static void jscriptUp() {//12
+		JavascriptExecutor jss = (JavascriptExecutor) driver;
+		jss.executeScript("window.scrollDown(0,-500)");
+	}
+	public static void actionsClickAndHold(WebElement draggableElement) {
+  act=new Actions(driver);
+		act.clickAndHold(draggableElement).build().perform();
+	}
+	public static void actionsMoveToElement(WebElement dropableElement) {
+	 act=new Actions(driver);
+	act.moveToElement(dropableElement);
+	}
+	public static void actionsRelease(WebElement draggableElement) {
+		 act=new Actions(driver);
+		act.release(draggableElement).build().perform();
+	}
+		public static void contectClic() {
+			 act=new Actions(driver);
+			act.contextClick();
+
+		}
+		private void doubleClick() {
+			 act=new Actions(driver);
+			act.doubleClick();
+		}
+		public void sendKeys() {
+			act=new Actions(driver);	
+			act.sendKeys("dvijdij");
+			}
+		
+		
+		
+		
+	}
+	
+	

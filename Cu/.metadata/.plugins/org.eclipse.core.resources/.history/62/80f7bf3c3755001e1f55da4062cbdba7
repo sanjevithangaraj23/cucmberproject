@@ -1,0 +1,24 @@
+package loginStepDefention;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Login_Step_Defenition {
+
+@Given("^adactin_LoginPage_Opening$")
+public void adactin_loginpage_opening() throws Throwable {
+    
+}
+
+@When("^user_Enters_The_Username$")
+public void user_enters_the_username() throws Throwable {
+ 
+}
+
+@Then("^user_Clicks_The_LoginButton$")
+public void user_clicks_the_loginbutton() throws Throwable {
+	
+}
+
+}

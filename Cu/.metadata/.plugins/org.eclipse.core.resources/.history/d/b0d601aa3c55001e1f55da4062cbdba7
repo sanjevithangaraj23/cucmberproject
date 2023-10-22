@@ -1,0 +1,8 @@
+Feature: Hotel booking in adactin website
+Scenario: scenario description
+Given adactin_LoginPage_Opening
+#When user_Enters_The_Username
+#And user_Enters_The_PassWord
+#Then user_Clicks_The_LoginButton
+
+

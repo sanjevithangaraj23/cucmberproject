@@ -1,0 +1,283 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "user Should be able to click on the login button",
+        "description": "",
+        "id": "adactin-hotel-app-booking-system;user-should-be-able-to-click-on-the-login-button",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8518927600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should enter the adactin webpage",
+            "match": {
+              "location": "loginSteps.userShouldEnterTheAdactinWebpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 151922800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user should give username",
+            "match": {
+              "location": "loginSteps.userShouldGiveUsername()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 104531400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should give password",
+            "match": {
+              "location": "loginSteps.userShouldGivePassword()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1029697200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "loginSteps.userClicksOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 259287100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the login should be successful",
+            "match": {
+              "location": "loginSteps.theLoginShouldBeSuccessful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@searchhotel"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "user searches for hotel and fills all the mandotory details and clicks on search button",
+        "description": "",
+        "id": "adactin-hotel-app-booking-system;user-searches-for-hotel-and-fills-all-the-mandotory-details-and-clicks-on-search-button",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 228238000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user selects the location of the hotel",
+            "match": {
+              "location": "SearchHotelSteps.userSelectsTheLocationOfTheHotel()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 223248600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user selects the hotel",
+            "match": {
+              "location": "SearchHotelSteps.userSelectsTheHotel()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 252392800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user selects the roomtype",
+            "match": {
+              "location": "SearchHotelSteps.userSelectsTheRoomtype()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 217380000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user selects the number of rooms",
+            "match": {
+              "location": "SearchHotelSteps.userSelectsTheNumberOfRooms()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 98892100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters the check in date",
+            "match": {
+              "location": "SearchHotelSteps.userEntersTheCheckInDate()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 52582600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enters the check out date",
+            "match": {
+              "location": "SearchHotelSteps.userEntersTheCheckOutDate()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 308354600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user selects the adults per room",
+            "match": {
+              "location": "SearchHotelSteps.userSelectsTheAdultsPerRoom()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 265099100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user selects the child per room",
+            "match": {
+              "location": "SearchHotelSteps.userSelectsTheChildPerRoom()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 945679600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user clicks the search button",
+            "match": {
+              "location": "SearchHotelSteps.userClicksTheSearchButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 310200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user should navigate to next page",
+            "match": {
+              "location": "SearchHotelSteps.userShouldNavigateToNextPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@searchhotel"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "user confims the selected hotel and details",
+        "description": "",
+        "id": "adactin-hotel-app-booking-system;user-confims-the-selected-hotel-and-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 86162500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user clicks on the select radio button",
+            "match": {
+              "location": "ConfirmSelectedHotelSteps.userClicksOnTheSelectRadioButton()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 830073700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user clicks the continue button",
+            "match": {
+              "location": "ConfirmSelectedHotelSteps.userClicksTheContinueButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 524500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the hotel is selected successfully",
+            "match": {
+              "location": "ConfirmSelectedHotelSteps.theHotelIsSelectedSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@searchhotel"
+          }
+        ]
+      }
+    ],
+    "name": "Adactin hotel app booking system",
+    "description": "",
+    "id": "adactin-hotel-app-booking-system",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/featurefiles/log.feature",
+    "tags": []
+  }
+]

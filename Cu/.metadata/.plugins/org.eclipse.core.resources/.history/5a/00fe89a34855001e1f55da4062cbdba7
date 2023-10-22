@@ -1,0 +1,20 @@
+package runner;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "featurefiles/start.feature",glue = "src/test/java/stepDef/StepDefenition")
+public class RunnerClass{
+}
+
+
+
+
+//@RunWith(Cucumber.class)
+//@CucumberOptions(features = "logfeatuefile/log.feature",glue = "stdf")
+//
+//public class loginrunner {
+//
+//}
